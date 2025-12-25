@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+     <header>
+          <h2>Welcome to Chat Application</h2>
+     </header>
+     <div class="container">
+     
+     <div class="left-side">
+          <p>Choose and Chat</p>
+          <div class="personal-chat-wrapper">
+               <p>Personal Chat</p>
+               <div id="personal-chat">
+                    <input type="text" id="user-name" placeholder="Enter Username">
+                    <button id="sent-chat-btn">Chat</button>
+               </div>
+          </div>
+          <div class="group-chat-wrapper">
+               <p>Group Chat</p>
+               <div id="group-chat">
+                    <input type="text" id="group-name" placeholder="Enter Group Name">
+                    <button id="join-group-btn">Join</button>
+               </div>
+          </div>
+          <button id="clr-btn">Clear</button>
+          <p id="error-msg"></p>
+          <button id="exit-btn">Exit</button>
+     </div>
+     <div class="right-side">
+          <div class="chat-wrapper">
+               <div id="messages">
+               </div>
+          </div>
+          <div class="msg-wrapper">
+               <textarea name="message" id="message" rows="5" placeholder="Type any message"></textarea>
+               <button id="sent-btn" style="display: none;">Sent</button>
+          </div>
+     </div>
+</div>
+<footer>
+     <p>zohogram </p>
+</footer>
+<script src="/socket.io/socket.io.js" defer></script>
+<script src="./script/client.js" defer></script>
+</body>
+</html>

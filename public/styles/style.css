@@ -1,0 +1,153 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+
+   body {
+     height: 100vh;
+     width: 100vw;
+     background-color: #f2f4f8;
+     display: flex;
+     flex-direction: column;
+   }
+
+   header {
+     background-color: #1e293b;
+     color: white;
+     text-align: center;
+     padding: 1rem;
+   }
+ 
+   .container {
+     flex: 1;
+     display: flex;
+     overflow: hidden;
+   }
+
+   .left-side {
+     width: 25%;
+     background-color: #0f172a;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+     gap: 1.5rem;
+   }
+   
+   .left-side p {
+     font-weight: bold;
+   }
+
+   .personal-chat-wrapper,
+   .group-chat-wrapper {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     padding-top: 1rem;
+     border-top: 1px solid #334155;
+   }
+   
+   #personal-chat,
+   #group-chat {
+     display: flex;
+     flex-direction: column;
+     gap: 0.7rem;
+   }
+   
+   input {
+     padding: 0.5rem;
+     border-radius: 6px;
+     border: none;
+   }
+   
+   button {
+     padding: 0.5rem;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     background-color: #38bdf8;
+     color: black;
+     font-weight: bold;
+   }
+   
+   button:hover {
+     background-color: #0ea5e9;
+   }
+   
+   #exit-btn {
+     margin-top: auto;
+     background-color: #ef4444;
+     color: white;
+   }
+
+   .right-side {
+     width: 75%;
+     display: flex;
+     flex-direction: column;
+     background-color: #e5e7eb;
+   }
+
+   .chat-wrapper {
+     flex: 1;
+     background-color: #ffffff;
+     padding: 1rem;
+     overflow-y: auto;
+   }
+
+   #messages {
+     display: flex;
+     flex-direction: column;
+     gap: 0.6rem;
+   }
+
+   .message {
+     max-width: 60%;
+     padding: 0.6rem 0.8rem;
+     border-radius: 10px;
+     font-size: 0.9rem;
+   }
+   
+   .sender {
+     align-self: flex-end;
+     background-color: #38bdf8;
+     color: black;
+   }
+   
+   .receiver {
+     align-self: flex-start;
+     background-color: #e5e7eb;
+   }
+   
+   .msg-wrapper {
+     display: flex;
+     gap: 0.5rem;
+     padding: 0.7rem;
+     background-color: #cbd5f5;
+   }
+   
+   textarea {
+     flex: 1;
+     resize: none;
+     border-radius: 6px;
+     border: none;
+     padding: 0.6rem;
+   }
+   
+   #sent-btn {
+     display: block;
+     background-color: #22c55e;
+     color: white;
+   }
+
+   footer {
+     background-color: #1e293b;
+     color: white;
+     text-align: center;
+     padding: 0.6rem;
+   }
+   #error-msg{
+    color: red;
+   }
+   
